@@ -1,4 +1,6 @@
 import { Route } from '@angular/router';
+import { CreateuserComponent } from './components/admin/createuser/createuser.component';
+import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 
 export const appRoutes: Route[] = [
@@ -9,6 +11,16 @@ export const appRoutes: Route[] = [
   {
     path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: 'admin',
+    component: DashboardComponent, // this is the component with the <router-outlet> in the template
+    children: [
+      {
+        path: 'create-user', // child route path
+        component: CreateuserComponent, // child route component that the router renders
+      },
+    ],
   },
 ];
 
