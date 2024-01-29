@@ -6,7 +6,7 @@ import {
   Inject,
   Injectable,
 } from '@angular/core';
-import { APP_TOKEN } from '../app.config';
+import { APP_TOKEN } from '../../app.config';
 
 @Component({
   selector: 'app-home',
