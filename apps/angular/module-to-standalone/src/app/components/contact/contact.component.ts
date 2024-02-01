@@ -6,9 +6,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <p>contact works!</p>
+    Create Contact Form
+
+    <button
+      routerLink=".."
+      class="ml-5 rounded-lg border bg-gray-700 p-2 text-white">
+      Back
+    </button>
   `,
-  styleUrl: './contact.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {}

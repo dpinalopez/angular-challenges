@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+import { ContactComponent } from './components/contact/contact.component';
 import { CreateuserComponent } from './components/createuser/createuser.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
@@ -28,7 +29,16 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'user',
-    component: HomeuserComponent,
+    children: [
+      {
+        path: '',
+        component: HomeuserComponent,
+      },
+      {
+        path: 'contact',
+        component: ContactComponent,
+      },
+    ],
   },
 ];
 
