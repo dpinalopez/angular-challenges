@@ -2,6 +2,7 @@ import { Route } from '@angular/router';
 import { CreateuserComponent } from './components/createuser/createuser.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
+import { HomeuserComponent } from './components/homeuser/homeuser.component';
 
 export const appRoutes: Route[] = [
   {
@@ -24,6 +25,10 @@ export const appRoutes: Route[] = [
         component: CreateuserComponent,
       },
     ],
+  },
+  {
+    path: 'user',
+    component: HomeuserComponent,
   },
 ];
 
