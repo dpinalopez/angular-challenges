@@ -3,19 +3,18 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-createcontact',
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    Contact Dashboard
+    Create Contact Form
 
     <button
-      routerLink="create-contact"
-      class="ml-10 rounded-lg border bg-gray-700 p-2 text-white">
-      Create contact
+      routerLink=".."
+      class="ml-5 rounded-lg border bg-gray-700 p-2 text-white">
+      Back
     </button>
-    <router-outlet></router-outlet>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ContactComponent {}
+export class CreatecontactComponent {}

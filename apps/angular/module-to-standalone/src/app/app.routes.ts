@@ -1,5 +1,6 @@
 import { Route } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
+import { CreatecontactComponent } from './components/createcontact/createcontact.component';
 import { CreateuserComponent } from './components/createuser/createuser.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
@@ -39,13 +40,13 @@ export const appRoutes: Route[] = [
       {
         path: 'contact',
         component: ContactComponent,
+        children: [
+          {
+            path: 'create-contact',
+            component: CreatecontactComponent,
+          },
+        ],
       },
     ],
   },
 ];
-
-// const routes: Routes = [
-//   { path: 'first-component', component: FirstComponent },
-//   { path: 'second-component', component: SecondComponent },
-//   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
-// ];
