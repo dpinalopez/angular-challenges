@@ -18,7 +18,7 @@ import { RouterLink, RouterModule } from '@angular/router';
         Admin
       </button>
       <button
-        routerLink="user"
+        routerLink="user/home"
         class="rounded-md border border-blue-400 px-4 py-2">
         User
       </button>

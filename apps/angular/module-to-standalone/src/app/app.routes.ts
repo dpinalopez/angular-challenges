@@ -4,6 +4,7 @@ import { CreateuserComponent } from './components/createuser/createuser.componen
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeuserComponent } from './components/homeuser/homeuser.component';
+import { Homeuser2Component } from './components/homeuser2/homeuser2.component';
 
 export const appRoutes: Route[] = [
   {
@@ -29,10 +30,11 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'user',
+    component: HomeuserComponent,
     children: [
       {
-        path: '',
-        component: HomeuserComponent,
+        path: 'home',
+        component: Homeuser2Component,
       },
       {
         path: 'contact',

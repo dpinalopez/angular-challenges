@@ -2,18 +2,12 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-homeuser2',
   standalone: true,
   imports: [CommonModule],
   template: `
-    Contact Dashboard
-
-    <button
-      routerLink="create-contact"
-      class="ml-10 rounded-lg border bg-gray-700 p-2 text-white">
-      Create contact
-    </button>
+    <div>Home User Component</div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ContactComponent {}
+export class Homeuser2Component {}
