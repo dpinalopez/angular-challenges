@@ -14,7 +14,6 @@ import { RouterModule } from '@angular/router';
       class="ml-10 rounded-lg border bg-gray-700 p-2 text-white">
       Create contact
     </button>
-    <router-outlet></router-outlet>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
