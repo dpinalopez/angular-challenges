@@ -1,38 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { APP_TOKEN } from '../../app.config';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-homeuser',
+  selector: 'app-homeuser2',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule],
   template: `
-    -- User Panel --
-    <div class="flex items-center gap-2">
-      <button
-        routerLink="home"
-        class="rounded-md border border-blue-400 px-4 py-2">
-        Home
-      </button>
-      <button
-        routerLink="contact"
-        class="rounded-md border border-blue-400 px-4 py-2">
-        Contact
-      </button>
-      More buttons ...
-    </div>
-    <router-outlet></router-outlet>
-    <section>
-      LoadedToken
-      {{ token }}
-    </section>
+    <div>Home User Component</div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeuserComponent {
-  token = '';
-  constructor(@Inject(APP_TOKEN) private config: string) {
-    this.token = config;
-  }
-}
+export class HomeuserComponent {}
